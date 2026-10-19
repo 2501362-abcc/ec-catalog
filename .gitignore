@@ -1,0 +1,6 @@
+.env
+/public_html/uploads/items/*
+!/public_html/uploads/items/.gitkeep
+!/public_html/uploads/items/.htaccess
+vendor/
+*.log

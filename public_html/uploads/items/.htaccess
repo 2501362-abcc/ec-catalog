@@ -1,0 +1,9 @@
+# TODO（上級）：このディレクトリに置かれたファイルが「実行」されないようにする設定を書く。
+#
+# ヒント：
+#   1. mod_php環境では `php_flag engine off` でPHPエンジン自体を無効化できる
+#      （<IfModule mod_php.c> ... </IfModule> で囲む）
+#   2. さらに <FilesMatch> で .php 等の拡張子への直接アクセスを Require all denied で拒否する
+#
+# なぜ必要か：includes/upload_helper.php でのチェックをすり抜けたファイルが
+# 万が一置かれてしまっても、ここで実行自体をブロックする「最終防衛ライン」になる。
